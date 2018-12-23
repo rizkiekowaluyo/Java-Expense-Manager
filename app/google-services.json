@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903853839673",
+    "firebase_url": "https://expenseapps.firebaseio.com",
+    "project_id": "expenseapps",
+    "storage_bucket": "expenseapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903853839673:android:92c953a9714b1ec7",
+        "android_client_info": {
+          "package_name": "net.wicara.rizki.expenseapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903853839673-u4h9hhqcbmmivnugj3k75n98s58tm1vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.wicara.rizki.expenseapps",
+            "certificate_hash": "33e7bc0db35b73ee92db1017636ce2e715d9bfed"
+          }
+        },
+        {
+          "client_id": "903853839673-l66cka558au6210g5vrjqski6f9eg3c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyVFJ2bpaQSgAWCNfwuSPZSLQRyECSy7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903853839673-l66cka558au6210g5vrjqski6f9eg3c3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

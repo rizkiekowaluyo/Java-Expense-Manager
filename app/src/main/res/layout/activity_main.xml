@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/dashboard"
+                android:text="My Dashboard"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fullnameuser"
+                android:layout_below="@+id/dashboard"
+                android:text="Fullname"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="62dp"
+                android:id="@+id/imageprofile"
+                android:layout_height="62dp"
+                android:background="@drawable/avatar"/>
+            
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="2"
+            android:layout_marginTop="35dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:background="@drawable/piggybank"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/amber"
+                        android:layout_margin="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Expense"
+                        android:textSize="18sp"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:background="@drawable/textlines"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/amber"
+                        android:layout_margin="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="News"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/assistant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:background="@drawable/customerservice"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/amber"
+                        android:layout_margin="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Assistant"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:elevation="6dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/amber"
+                        android:layout_margin="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="About Us"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
